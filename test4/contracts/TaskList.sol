@@ -13,8 +13,6 @@ contract TaskList {
 
     mapping (uint8 => Task) public tasks; 
 
-    uint8[] public storeNumbers;
-
     modifier checkId(uint8 id) {
         require(!(id >= sequence), 103);
         require(!(tasks[id].timestamp == 0), 104);
@@ -29,7 +27,6 @@ contract TaskList {
     function addTask(string taskName)  public  {
         tvm.accept();       
         Task task = Task(taskName, now, false);
-        storeNumbers.push(sequence);
         tasks[sequence] = task;
         sequence++;
     }
@@ -37,12 +34,10 @@ contract TaskList {
     function getOpenedTasks()  public  view returns (uint8){
         tvm.accept();
         uint8 totalValue = 0;
-        /*for (uint8 i = 0; i < sequence - 1; i++) {
-            if(!tasks[i].closed)
-             totalValue++;
-        }*/
-        for (uint8 i = 0; i < storeNumbers.length; i++){
-             if(!tasks[storeNumbers[i]].closed)
+
+        Task[] tasksOut;
+        for((uint8 key, Task value) : tasks){
+             if(!value.closed)
              totalValue++;
         }
         return totalValue;
@@ -50,10 +45,7 @@ contract TaskList {
 
     function getAllTasks()  public  returns (mapping (uint8 => Task)){
         tvm.accept();
-        /*Task[] ret;
-        for (uint8 i = 0; i < sequence - 1; i++) {
-            ret.push(tasks[i]);
-        }*/
+
         return tasks;
     }
 
@@ -64,19 +56,6 @@ contract TaskList {
 
     function deleteTaskById(uint8 id)  public checkId(id) {
         tvm.accept();
-
-        uint8 index = 0;
-
-        for (uint8 i = 0; i < storeNumbers.length; i++){
-            if(storeNumbers[i] == id)index = i;
-        }
-
-        //require(index > 0, 204, "Cant remove element");
-
-        for (index; index < storeNumbers.length-1; index++){
-            storeNumbers[index] = storeNumbers[index+1];
-        }
-        storeNumbers.pop();
         delete tasks[id];
     }
 

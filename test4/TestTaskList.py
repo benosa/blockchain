@@ -260,10 +260,10 @@ ts4.init('contracts/', verbose = True)
 
 
 # Run a test
-#test1()
-#test2()
-#test3()
-#test4()
+test1()
+test2()
+test3()
+test4()
 test5()
-#test6()
-#test7()
+test6()
+test7()
