@@ -178,8 +178,6 @@ def test5():
 
     result = tut.call_getter('tasks')
     assert eq({}, result)
-    result = tut.call_getter('storeNumbers')
-    assert eq([], result)
 
 """
 POSITIVE

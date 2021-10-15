@@ -6,7 +6,7 @@ contract TaskList {
     uint8 public sequence = 0;
 
     struct Task {
-        string taskName;
+        bytes taskName;
         uint32 timestamp;
         bool closed;  
     }
@@ -24,7 +24,7 @@ contract TaskList {
         require(msg.pubkey() == tvm.pubkey(), 102);
     }
 
-    function addTask(string taskName)  public  {
+    function addTask(bytes taskName)  public  {
         tvm.accept();       
         Task task = Task(taskName, now, false);
         tasks[sequence] = task;
@@ -49,7 +49,7 @@ contract TaskList {
         return tasks;
     }
 
-    function getTaskNameById(uint8 id)  public checkId(id)  returns (string){
+    function getTaskNameById(uint8 id)  public checkId(id)  returns (bytes){
         tvm.accept();
         return tasks[id].taskName;
     }
