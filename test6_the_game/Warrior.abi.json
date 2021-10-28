@@ -1,0 +1,139 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"station","type":"address"},
+				{"name":"nameValue","type":"string"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getPowerAttack",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "attack",
+			"inputs": [
+				{"name":"addr","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "handleDeath",
+			"inputs": [
+				{"name":"dest","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getBaseStation",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"address"}
+			]
+		},
+		{
+			"name": "getName",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"string"}
+			]
+		},
+		{
+			"name": "takeAttack",
+			"inputs": [
+				{"name":"powerAttack","type":"int256"},
+				{"name":"name","type":"string"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "takeAttack2",
+			"inputs": [
+				{"name":"powerAttack","type":"int256"},
+				{"name":"name","type":"string"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getLife",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "setLife",
+			"inputs": [
+				{"name":"value","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getProtection",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "setProtection",
+			"inputs": [
+				{"name":"value","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getLogs",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"addr","type":"address"},{"name":"name","type":"string"},{"name":"power","type":"int256"}],"name":"value0","type":"tuple[]"}
+			]
+		},
+		{
+			"name": "arrayAttacks",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"addr","type":"address"},{"name":"name","type":"string"},{"name":"power","type":"int256"}],"name":"arrayAttacks","type":"map(uint256,tuple)"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"life","type":"int256"},
+		{"name":"protection","type":"int256"},
+		{"name":"randNonce","type":"uint256"},
+		{"components":[{"name":"addr","type":"address"},{"name":"name","type":"string"},{"name":"power","type":"int256"}],"name":"arrayAttacks","type":"map(uint256,tuple)"},
+		{"name":"nameValue","type":"string"},
+		{"name":"baseStation","type":"address"},
+		{"name":"newPower","type":"int256"},
+		{"name":"formula","type":"int256"}
+	]
+}
