@@ -1,0 +1,17 @@
+Config: default
+Input arguments:
+     tvc: HelloDebot.tvc
+      wc: None
+    keys: HelloDebot.keys.json
+init_data: None
+is_update_tvc: None
+
+Seed phrase: "mystery cushion ability also crowd steak bar fault love task spice ball"
+Raw address: 0:7f1889751a4cec9dabd71321ff27d96de40da2c0f3aa93a6baec4b8fe6afd6fa
+testnet:
+Non-bounceable address (for init): 0QB_GIl1GkzsnavXEyH_J9lt5A2iwPOqk6a67EuP5q_W-lXe
+Bounceable address (for later access): kQB_GIl1GkzsnavXEyH_J9lt5A2iwPOqk6a67EuP5q_W-ggb
+mainnet:
+Non-bounceable address (for init): UQB_GIl1GkzsnavXEyH_J9lt5A2iwPOqk6a67EuP5q_W-u5U
+Bounceable address (for later access): EQB_GIl1GkzsnavXEyH_J9lt5A2iwPOqk6a67EuP5q_W-rOR
+Succeeded

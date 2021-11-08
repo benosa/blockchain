@@ -1,0 +1,90 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addTask",
+			"inputs": [
+				{"name":"taskName","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getOpenedTasks",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint8"}
+			]
+		},
+		{
+			"name": "getAllTasks",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"taskName","type":"bytes"},{"name":"timestamp","type":"uint32"},{"name":"closed","type":"bool"}],"name":"value0","type":"map(uint8,tuple)"}
+			]
+		},
+		{
+			"name": "getTaskNameById",
+			"inputs": [
+				{"name":"id","type":"uint8"}
+			],
+			"outputs": [
+				{"name":"value0","type":"bytes"}
+			]
+		},
+		{
+			"name": "deleteTaskById",
+			"inputs": [
+				{"name":"id","type":"uint8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "closeTaskById",
+			"inputs": [
+				{"name":"id","type":"uint8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "sequence",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"sequence","type":"uint8"}
+			]
+		},
+		{
+			"name": "tasks",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"taskName","type":"bytes"},{"name":"timestamp","type":"uint32"},{"name":"closed","type":"bool"}],"name":"tasks","type":"map(uint8,tuple)"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"sequence","type":"uint8"},
+		{"components":[{"name":"taskName","type":"bytes"},{"name":"timestamp","type":"uint32"},{"name":"closed","type":"bool"}],"name":"tasks","type":"map(uint8,tuple)"}
+	]
+}

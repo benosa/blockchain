@@ -1,0 +1,57 @@
+{
+	"ABI version": 2,
+	"version": "2.2",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "myPublicFunction",
+			"inputs": [
+				{"name":"value","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "myExternalFunction",
+			"inputs": [
+				{"name":"value","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "myParam",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"myParam","type":"uint256"}
+			]
+		},
+		{
+			"name": "callerAddress",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"callerAddress","type":"address"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"myParam","type":"uint256"},
+		{"name":"callerAddress","type":"address"}
+	]
+}

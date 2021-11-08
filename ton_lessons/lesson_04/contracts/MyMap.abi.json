@@ -1,0 +1,66 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addTask",
+			"inputs": [
+				{"name":"taskName","type":"string"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "iterate",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"taskName","type":"string"},{"name":"timestamp","type":"uint32"},{"name":"closed","type":"bool"}],"name":"value0","type":"tuple[]"}
+			]
+		},
+		{
+			"name": "sequence",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"sequence","type":"uint8"}
+			]
+		},
+		{
+			"name": "tasks",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"taskName","type":"string"},{"name":"timestamp","type":"uint32"},{"name":"closed","type":"bool"}],"name":"tasks","type":"map(uint8,tuple)"}
+			]
+		},
+		{
+			"name": "storeNumbers",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"storeNumbers","type":"uint8[]"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"sequence","type":"uint8"},
+		{"components":[{"name":"taskName","type":"string"},{"name":"timestamp","type":"uint32"},{"name":"closed","type":"bool"}],"name":"tasks","type":"map(uint8,tuple)"},
+		{"name":"storeNumbers","type":"uint8[]"}
+	]
+}
