@@ -1,0 +1,16 @@
+Config: default
+Input arguments:
+     tvc: Shopping.tvc
+      wc: None
+    keys: Key.keys.json
+init_data: None
+is_update_tvc: None
+
+Raw address: 0:187a66a96642215bc4013441901a899f4becd4f8c1cf5e26a3f4e4cc0ba7bcb8
+testnet:
+Non-bounceable address (for init): 0QAYemapZkIhW8QBNEGQGomfS-zU-MHPXiaj9OTMC6e8uOWY
+Bounceable address (for later access): kQAYemapZkIhW8QBNEGQGomfS-zU-MHPXiaj9OTMC6e8uLhd
+mainnet:
+Non-bounceable address (for init): UQAYemapZkIhW8QBNEGQGomfS-zU-MHPXiaj9OTMC6e8uF4S
+Bounceable address (for later access): EQAYemapZkIhW8QBNEGQGomfS-zU-MHPXiaj9OTMC6e8uAPX
+Succeeded
