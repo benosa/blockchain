@@ -1,0 +1,17 @@
+Config: default
+Input arguments:
+     tvc: FillingShoppingList.tvc
+      wc: None
+    keys: Key.keys.json
+init_data: None
+is_update_tvc: None
+
+Seed phrase: "junk youth road grit retire swallow once fog upper tiger artwork joy"
+Raw address: 0:2cc7011a7bfa2d641d4c70ea65fc7747c0a1eb005a9ad25f27fc9f052e063aa8
+testnet:
+Non-bounceable address (for init): 0QAsxwEae_otZB1McOpl_HdHwKHrAFqa0l8n_J8FLgY6qCea
+Bounceable address (for later access): kQAsxwEae_otZB1McOpl_HdHwKHrAFqa0l8n_J8FLgY6qHpf
+mainnet:
+Non-bounceable address (for init): UQAsxwEae_otZB1McOpl_HdHwKHrAFqa0l8n_J8FLgY6qJwQ
+Bounceable address (for later access): EQAsxwEae_otZB1McOpl_HdHwKHrAFqa0l8n_J8FLgY6qMHV
+Succeeded
